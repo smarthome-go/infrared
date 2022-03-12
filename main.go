@@ -22,20 +22,20 @@ type IfScanner struct {
 	Scanning    bool
 }
 
-// The module's errors
-var (
-	ErrInitialized      = errors.New("cannot initialize scanner: scanner is already initialized")
-	ErrNotInitialized   = errors.New("cannot scan: not initialized: use Setup() before scanning")
-	ErrAlreadyScanning  = errors.New("cannot concurrently scan: wait until scanning is finished before starting another scan")
-	ErrCannotInitialize = errors.New("failed to initialize: hardware failure")
-)
-
 var (
 	Scanner = IfScanner{
 		Pin:         0,
 		Initialized: false,
 		Scanning:    false,
 	}
+)
+
+// The module's errors
+var (
+	ErrInitialized      = errors.New("cannot initialize scanner: scanner is already initialized")
+	ErrNotInitialized   = errors.New("cannot scan: not initialized: use Setup() before scanning")
+	ErrAlreadyScanning  = errors.New("cannot concurrently scan: wait until scanning is finished before starting another scan")
+	ErrCannotInitialize = errors.New("failed to initialize: hardware failure")
 )
 
 // Scans for received codes, this method is blocking
