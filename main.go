@@ -1,3 +1,7 @@
+/*
+A library for interacting with infrared remote controls which use the NEC protocol
+*/
+
 package rpiif
 
 import (
@@ -37,7 +41,7 @@ var (
 	ErrCannotInitialize = errors.New("failed to initialize: hardware failure")
 )
 
-// The module's errors
+// Functions
 
 // Scans for received codes, this method is blocking
 // Can return errors ErrNotInitialized or ErrAlreadyScanning
