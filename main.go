@@ -30,13 +30,14 @@ var (
 	}
 )
 
-// The module's errors
 var (
 	ErrInitialized      = errors.New("cannot initialize scanner: scanner is already initialized")
 	ErrNotInitialized   = errors.New("cannot scan: not initialized: use Setup() before scanning")
 	ErrAlreadyScanning  = errors.New("cannot concurrently scan: wait until scanning is finished before starting another scan")
 	ErrCannotInitialize = errors.New("failed to initialize: hardware failure")
 )
+
+// The module's errors
 
 // Scans for received codes, this method is blocking
 // Can return errors ErrNotInitialized or ErrAlreadyScanning
