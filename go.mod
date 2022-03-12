@@ -1,4 +1,4 @@
-module github.com/MikMuellerDev/rpi-infrared
+module github.com/MikMuellerDev/rpiif
 
 go 1.17
 
