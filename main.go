@@ -1,8 +1,9 @@
 /*
-A library for interacting with infrared remote controls which use the NEC protocol
+Infrared
+A library for interacting with infrared remote controls which use the NEC protocol from a Raspberry-Pi
 */
 
-package rpiif
+package infrared
 
 import (
 	"errors"
