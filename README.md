@@ -1,21 +1,21 @@
-# rpi-infrared
+# Raspberry-Pi infrared
  A library used for interacting with infrared remote controls in go
 
 ## Installation / Setup
 To install the library, execute the following command
 ```
-go get github.com/MikMuellerDev/rpiif  
+go get github.com/smarthome-go/infrared  
 ```
 You can then import the library in your project using following code
 ```go
-import "github.com/MikMuellerDev/rpiif"
+import "github.com/smarthome-go/infrared"
 ```
 
 ## Getting started
 ### Creating a new *instance*
 Before codes can be scanned, create a new module struct:
 ```go
-ifScanner := rpiif.Scanner
+ifScanner := infrared.Scanner
 ```
 The `ifScanner` struct now allows you to use the library
 
@@ -47,11 +47,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/MikMuellerDev/rpiif"
+	"github.com/smarthome-go/infrared"
 )
 
 func main() {
-	ifScanner := rpiif.Scanner
+	ifScanner := infrared.Scanner
 	if err := ifScanner.Setup(4); err != nil {
 		panic(err.Error())
 	}
