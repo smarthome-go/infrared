@@ -15,7 +15,7 @@ import "github.com/smarthome-go/infrared"
 ### Creating a new *instance*
 Before codes can be scanned, create a new module struct:
 ```go
-ifScanner := infrared.Scanner
+ifScanner := infrared.Scanner{}
 ```
 The `ifScanner` struct now allows you to use the library
 
