@@ -2,7 +2,7 @@
  A library used for interacting with infrared remote controls via Go.
 
 ## Installation / Setup
-To install the library, execute the following command
+To install the library, issue the following command
 ```
 go get github.com/smarthome-go/infrared  
 ```
