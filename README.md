@@ -1,5 +1,5 @@
 # Raspberry-Pi infrared
- A library used for interacting with infrared remote controls in go
+ A library used for interacting with infrared remote controls via Go.
 
 ## Installation / Setup
 To install the library, execute the following command
